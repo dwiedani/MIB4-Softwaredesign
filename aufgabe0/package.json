@@ -10,6 +10,7 @@
     "grunt-eslint": "^22.0.0",
     "grunt-typescript": "^0.8.0",
     "prettier": "^1.19.1",
+    "typescript": "^3.8.3",
     "typescript-eslint": "0.0.1-alpha.0"
   },
   "devDependencies": {

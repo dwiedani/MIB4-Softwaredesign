@@ -1,11 +1,13 @@
 {
 	"env": {
 		"es6": true,
-		"browser": true,
 	},
 	"extends": ["airbnb-typescript"],
 	"rules": {
 		"no-console": 1,
 		"no-unused-vars": 1,
 	},
+	parserOptions: {
+    	project: 'tsconfig.json',
+  	},
 }

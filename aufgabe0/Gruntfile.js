@@ -10,9 +10,7 @@ module.exports = function(grunt) {
 
 		typescript: {
 			options: {
-				module: 'commonjs',
-				sourceMap: true,
-				target: 'es6',
+				configFile: 'tsconfig.json',
 			},
 			all: {
 				src: ['./src/assets/ts/*.ts','./src/assets/ts/*/*.ts'],
@@ -25,7 +23,7 @@ module.exports = function(grunt) {
 				configFile: '.eslintrc',
 				useEslintrc: false,
         	},
-        	target: ['./src/assets/ts/file.ts'],
+        	target: ['./src/assets/ts/*.ts'],
     	},
 	});
 	grunt.loadNpmTasks('grunt-typescript');
