@@ -1,39 +1,37 @@
 module.exports = function(grunt) {
-	grunt.initConfig({
-		pkg: grunt.file.readJSON('package-lock.json'),
 
+	grunt.initConfig({
 		watch: {
 			typescript: {
-				files: ['src/ts/*.ts'],
-				tasks: ['typescript'],
-			},
-			sass: {
-				files: ['src/scss/*.scss','src/scss/*/*.scss'],
-				tasks: ['sass'],
-			},
+				files: ['src/assets/ts/*.ts'],
+				tasks: ['typescript','eslint'],
+			}
 		},
 
 		typescript: {
 			options: {
-				module: 'commonjs', 
-				target: 'es5',
+				module: 'commonjs',
 				sourceMap: true,
+				target: 'es6',
 			},
 			all: {
-				src: ['./src/ts/*.ts'],
-				dest: './dist/js/'
-			}
+				src: ['./src/assets/ts/*.ts','./src/assets/ts/*/*.ts'],
+				dest: './dist/assets/js/',
+			},
 		},
-		sass: {
-       		dist: {
-       		    files: {
-       		        'dist/css/main.css' : 'src/scss/main.scss'
-       		    },
-       		},
-		},
+
+		eslint: {
+        	options: {
+				configFile: '.eslintrc',
+				useEslintrc: false,
+        	},
+        	target: ['./src/assets/ts/file.ts'],
+    	},
 	});
-	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-typescript');
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.registerTask('default', ['typescript','sass','watch']);
-}
+	grunt.loadNpmTasks('grunt-eslint');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+
+	grunt.registerTask('default', ['typescript','eslint','watch']);
+
+};
