@@ -1,4 +1,4 @@
-import {Question} from "./Question";
+import { Question } from './Question';
 
 export class EstimationQuestion extends Question {
   private answer : number;

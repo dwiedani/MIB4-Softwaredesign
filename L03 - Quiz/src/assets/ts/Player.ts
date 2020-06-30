@@ -1,5 +1,5 @@
-class Player {
-  private readonly name : string;
+export class Player {
+  private name : string;
 
   private score : number;
 

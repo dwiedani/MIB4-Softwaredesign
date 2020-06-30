@@ -1,5 +1,6 @@
-import {Question} from "./components/Question";
-import {Game} from "./Game";
+import { Question } from './Question';
+import { Game } from './Game';
+import { Player } from './Player';
 
 export class GameManager {
   private game : Game;

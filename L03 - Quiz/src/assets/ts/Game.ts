@@ -1,4 +1,5 @@
-import {Question} from "./components/Question";
+import { Question } from './Question';
+import { Player } from './Player';
 
 export class Game {
   private players : Player[];
