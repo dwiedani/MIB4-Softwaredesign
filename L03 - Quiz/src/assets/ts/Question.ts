@@ -2,7 +2,8 @@ class Question {
   private question : string;
 
   constructor(_question : string) {
-  	this.question = _question;
+    this.question = _question;
   }
 }
-export = Question;
+
+export { Question };

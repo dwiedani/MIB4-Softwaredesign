@@ -1,15 +1,19 @@
-import Player = require('./Player');
-import Question = require('./components/Question');
-import YesNoQuestion = require('./components/YesNoQuestion');
-import GameManager = require('./GameManager');
+import { Question } from './Question';
+
+import { YesNoQuestion } from './YesNoQuestion';
+
+import { Game } from './Game';
+import { GameManager } from './GameManager';
+
+import { Player } from './Player';
+
 
 const playerCount = prompt('How many Players?');
 const gameManager = new GameManager();
 let players: Player[];
 let questions: Question[];
-
-questions.push(new YesNoQuestion('Sind Eisbären Weiß?', true));
-questions.push(new YesNoQuestion('Sind Eisbären Schwarz?', false));
+questions.push(new YesNoQuestion('Sind Eisbaeren Weiß?', true));
+questions.push(new YesNoQuestion('Sind Eisbaeren Schwarz?', false));
 
 players.push(new Player('Player0'));
 players.push(new Player('Player1'));

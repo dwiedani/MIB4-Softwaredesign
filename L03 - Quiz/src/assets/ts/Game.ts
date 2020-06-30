@@ -1,5 +1,5 @@
-import Player = require('./Player');
-import Question = require('./components/Question');
+import { Question } from './Question';
+import { Player } from './Player';
 
 class Game {
   private players : Player[];
@@ -22,4 +22,5 @@ class Game {
     return this.questions[index];
   }
 }
-export = Game;
+
+export { Game };

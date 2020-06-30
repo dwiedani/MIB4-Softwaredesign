@@ -20,4 +20,5 @@ class Player {
     return this.score;
   }
 }
-export = Player;
+
+export { Player };
