@@ -1,4 +1,5 @@
 import { Question } from './Question';
+
 export class YesNoQuestion extends Question {
   private answer : boolean;
 
@@ -10,8 +11,7 @@ export class YesNoQuestion extends Question {
   evaluateAnswer(_answer : boolean) {
   	if (this.answer === _answer) {
   	    return true;
-  	} else {
-        return false;
-    }
+  	}
+    return false;
   }
 }

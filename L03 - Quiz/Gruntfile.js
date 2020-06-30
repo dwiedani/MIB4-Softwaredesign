@@ -11,6 +11,7 @@ module.exports = function(grunt) {
 		typescript: {
 			options: {
 				configFile: 'tsconfig.json',
+				module: 'commonjs'
 			},
 			all: {
 				src: ['./src/assets/ts/*.ts','./src/assets/ts/*/*.ts'],
