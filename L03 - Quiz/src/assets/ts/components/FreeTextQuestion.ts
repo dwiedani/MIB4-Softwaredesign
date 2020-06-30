@@ -1,3 +1,5 @@
+import {Question} from "./Question";
+
 class FreeTextQuestion extends Question {
   private answer : string;
 

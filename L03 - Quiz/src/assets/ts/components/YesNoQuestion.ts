@@ -1,4 +1,5 @@
-class YesNoQuestion extends Question {
+import { Question } from "./Question";
+export class YesNoQuestion extends Question {
   private answer : boolean;
 
   constructor(_question : string, _answer: boolean) {

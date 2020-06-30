@@ -1,3 +1,5 @@
+import {Question} from "./Question";
+
 class MultipleAnswerQuestion extends Question {
   private answers;
 

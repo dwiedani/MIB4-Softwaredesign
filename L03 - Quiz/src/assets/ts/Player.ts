@@ -1,5 +1,5 @@
 class Player {
-  private name : string;
+  private readonly name : string;
 
   private score : number;
 

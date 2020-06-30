@@ -1,3 +1,5 @@
+import {Question} from "./Question";
+
 class EstimationQuestion extends Question {
   private answer : number;
 
