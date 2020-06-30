@@ -1,6 +1,6 @@
-import { Question } from './Question';
+import Question = require('./Question');
 
-export class MultipleAnswerQuestion extends Question {
+class MultipleAnswerQuestion extends Question {
   private answers;
 
   constructor(_question : string, _answers) {

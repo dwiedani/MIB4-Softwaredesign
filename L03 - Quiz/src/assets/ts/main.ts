@@ -1,7 +1,7 @@
-import { YesNoQuestion } from './YesNoQuestion';
-import { Question } from './Question';
-import { GameManager } from './GameManager';
-import { Player } from './Player';
+import Player = require('./Player');
+import Question = require('./components/Question');
+import YesNoQuestion = require('./components/YesNoQuestion');
+import GameManager = require('./GameManager');
 
 const playerCount = prompt('How many Players?');
 const gameManager = new GameManager();
