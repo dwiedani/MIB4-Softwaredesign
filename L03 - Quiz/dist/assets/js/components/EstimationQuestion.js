@@ -3,17 +3,19 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var EstimationQuestion = (function (_super) {
-    __extends(EstimationQuestion, _super);
-    function EstimationQuestion(_question, _answer, _delta) {
-        _super.call(this, _question);
-        this.delta = _delta;
-    }
-    EstimationQuestion.prototype.evaluateAnswer = function (_answer) {
-        if (_answer <= this.answer + this.delta && _answer >= this.answer - this.delta) {
-            return true;
+define(["require", "exports", './Question'], function (require, exports, Question) {
+    var EstimationQuestion = (function (_super) {
+        __extends(EstimationQuestion, _super);
+        function EstimationQuestion(_question, _answer, _delta) {
+            _super.call(this, _question);
+            this.delta = _delta;
         }
-        return false;
-    };
-    return EstimationQuestion;
-})(Question);
+        EstimationQuestion.prototype.evaluateAnswer = function (_answer) {
+            if (_answer <= this.answer + this.delta && _answer >= this.answer - this.delta) {
+                return true;
+            }
+            return false;
+        };
+        return EstimationQuestion;
+    })(Question);
+});

@@ -1,12 +1,14 @@
 "use strict";
 exports.__esModule = true;
-var YesNoQuestion_1 = require("./components/YesNoQuestion");
+var Player = require("./Player");
+var YesNoQuestion = require("./YesNoQuestion");
+var GameManager = require("./GameManager");
 var playerCount = prompt('How many Players?');
 var gameManager = new GameManager();
 var players;
 var questions;
-questions.push(new YesNoQuestion_1.YesNoQuestion('Sind Eisbären Weiß?', true));
-questions.push(new YesNoQuestion_1.YesNoQuestion('Sind Eisbären Schwarz?', false));
+questions.push(new YesNoQuestion('Sind Eisbären Weiß?', true));
+questions.push(new YesNoQuestion('Sind Eisbären Schwarz?', false));
 players.push(new Player('Player0'));
 players.push(new Player('Player1'));
 players.push(new Player('Player2'));

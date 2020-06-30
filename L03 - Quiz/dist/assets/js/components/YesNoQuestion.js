@@ -3,17 +3,20 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var YesNoQuestion = (function (_super) {
-    __extends(YesNoQuestion, _super);
-    function YesNoQuestion(_question, _answer) {
-        _super.call(this, _question);
-        this.answer = _answer;
-    }
-    YesNoQuestion.prototype.evaluateAnswer = function (_answer) {
-        if (this.answer === _answer) {
-            return true;
+define(["require", "exports", './Question'], function (require, exports, Question) {
+    var YesNoQuestion = (function (_super) {
+        __extends(YesNoQuestion, _super);
+        function YesNoQuestion(_question, _answer) {
+            _super.call(this, _question);
+            this.answer = _answer;
         }
-        return false;
-    };
+        YesNoQuestion.prototype.evaluateAnswer = function (_answer) {
+            if (this.answer === _answer) {
+                return true;
+            }
+            return false;
+        };
+        return YesNoQuestion;
+    })(Question);
     return YesNoQuestion;
-})(Question);
+});

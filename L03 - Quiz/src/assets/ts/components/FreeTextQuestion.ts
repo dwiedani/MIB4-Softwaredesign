@@ -1,6 +1,6 @@
-import { Question } from './Question';
+import Question = require('./Question');
 
-export class FreeTextQuestion extends Question {
+class FreeTextQuestion extends Question {
   private answer : string;
 
   constructor(_question : string, _answer: string) {
@@ -12,3 +12,4 @@ export class FreeTextQuestion extends Question {
     return false;
   }
 }
+export = FreeTextQuestion;

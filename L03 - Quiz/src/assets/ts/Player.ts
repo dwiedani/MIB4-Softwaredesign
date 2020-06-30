@@ -1,4 +1,4 @@
-export class Player {
+class Player {
   private name : string;
 
   private score : number;
@@ -20,3 +20,4 @@ export class Player {
     return this.score;
   }
 }
+export = Player;

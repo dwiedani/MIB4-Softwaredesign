@@ -1,8 +1,8 @@
-import { Question } from './Question';
-import { Game } from './Game';
-import { Player } from './Player';
+import Player = require('./Player');
+import Question = require('./components/Question');
+import Game = require('./Game');
 
-export class GameManager {
+class GameManager {
   private game : Game;
 
   startGame(_players : Player[], _questions : Question[], _maxRounds : number) {
@@ -13,3 +13,4 @@ export class GameManager {
     }
   }
 }
+export = GameManager;

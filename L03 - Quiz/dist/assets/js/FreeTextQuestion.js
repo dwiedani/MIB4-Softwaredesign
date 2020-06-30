@@ -3,15 +3,18 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var FreeTextQuestion = (function (_super) {
-    __extends(FreeTextQuestion, _super);
-    function FreeTextQuestion(_question, _answer) {
-        _super.call(this, _question);
-    }
-    FreeTextQuestion.prototype.evaluateAnswer = function (_answer) {
-        if (_answer === this.answer)
-            return true;
-        return false;
-    };
+define(["require", "exports", './Question'], function (require, exports, Question) {
+    var FreeTextQuestion = (function (_super) {
+        __extends(FreeTextQuestion, _super);
+        function FreeTextQuestion(_question, _answer) {
+            _super.call(this, _question);
+        }
+        FreeTextQuestion.prototype.evaluateAnswer = function (_answer) {
+            if (_answer === this.answer)
+                return true;
+            return false;
+        };
+        return FreeTextQuestion;
+    })(Question);
     return FreeTextQuestion;
-})(Question);
+});

@@ -1,6 +1,6 @@
-import { Question } from './Question';
+import Question = require('./Question');
 
-export class EstimationQuestion extends Question {
+class EstimationQuestion extends Question {
   private answer : number;
 
   private delta : number;
