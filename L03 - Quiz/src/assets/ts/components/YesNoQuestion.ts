@@ -1,4 +1,4 @@
-import { Question } from './Question';
+import { Question } from './components/Question';
 
 export class YesNoQuestion extends Question {
   private answer : boolean;
