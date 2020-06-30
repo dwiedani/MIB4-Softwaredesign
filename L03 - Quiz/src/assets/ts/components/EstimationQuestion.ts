@@ -1,6 +1,6 @@
 import {Question} from "./Question";
 
-class EstimationQuestion extends Question {
+export class EstimationQuestion extends Question {
   private answer : number;
 
   private delta : number;

@@ -1,5 +1,6 @@
 import { YesNoQuestion } from "./components/YesNoQuestion";
 import { Question } from "./components/Question";
+import {GameManager} from "./GameManager";
 const playerCount = prompt('How many Players?');
 const gameManager = new GameManager();
 let players: Player[];

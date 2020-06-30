@@ -1,6 +1,6 @@
 import {Question} from "./Question";
 
-class FreeTextQuestion extends Question {
+export class FreeTextQuestion extends Question {
   private answer : string;
 
   constructor(_question : string, _answer: string) {

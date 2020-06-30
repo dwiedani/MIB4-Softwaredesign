@@ -1,4 +1,7 @@
-class GameManager {
+import {Question} from "./components/Question";
+import {Game} from "./Game";
+
+export class GameManager {
   private game : Game;
 
   startGame(_players : Player[], _questions : Question[], _maxRounds : number) {

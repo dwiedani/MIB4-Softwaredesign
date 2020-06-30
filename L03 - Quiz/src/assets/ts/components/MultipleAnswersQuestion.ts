@@ -1,6 +1,6 @@
 import {Question} from "./Question";
 
-class MultipleAnswerQuestion extends Question {
+export class MultipleAnswerQuestion extends Question {
   private answers;
 
   constructor(_question : string, _answers) {

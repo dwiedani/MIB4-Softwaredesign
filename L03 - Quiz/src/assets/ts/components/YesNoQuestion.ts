@@ -8,9 +8,7 @@ export class YesNoQuestion extends Question {
   }
 
   evaluateAnswer(_answer : boolean) {
-  	if (this.answer === _answer) {
-  		return true;
-  	}
+  	if (this.answer === _answer) { return true; }
   		return false;
   }
 }

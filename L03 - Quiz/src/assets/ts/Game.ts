@@ -1,4 +1,6 @@
-class Game {
+import {Question} from "./components/Question";
+
+export class Game {
   private players : Player[];
 
   private questions : Question[];
