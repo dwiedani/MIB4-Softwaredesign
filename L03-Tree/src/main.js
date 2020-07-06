@@ -14,6 +14,5 @@ var Tree;
     child1.appendChild(grand13);
     var grand21 = tree.createNode("grand21");
     child2.appendChild(grand21);
-    // root.printTree();
     console.log(root.printTree());
 })(Tree || (Tree = {}));
