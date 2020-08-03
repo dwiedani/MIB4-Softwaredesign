@@ -1,0 +1,50 @@
+{
+		"_information": "welcome to daniels island do you want to start your adventure?",
+		"_player": {
+			"name": "daniel",
+			"hp": 100,
+			"attack": 10,
+			"armor": 50,
+			"items": [],
+			"equipped": []
+		},
+		"_currentStageId": 0,
+		"_stages": [{
+			"id": 0,
+			"information": "this is a dark cave",
+			"locked": false,
+			"items": [],
+			"npcs": [{
+				"name": "arogan",
+				"hp": 50,
+				"attack": 10,
+				"armor": 50,
+				"equipped": [],
+				"isAggressive": false,
+				"items": [],
+				"interactions": []
+			}],
+			"nextStages": {
+				"north": 1
+			}
+		},
+			{
+				"id": 1,
+				"information": "this is a dark asdasdasd",
+				"locked": false,
+				"items": [],
+				"npcs": [{
+					"name": "arogano",
+					"hp": 50,
+					"attack": 10,
+					"armor": 50,
+					"equipped": [],
+					"isAggressive": false,
+					"items": [],
+					"interactions": []
+				}],
+				"nextStages": {
+					"north": 2
+				}
+			}]
+}

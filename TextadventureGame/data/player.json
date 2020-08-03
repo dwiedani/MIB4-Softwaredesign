@@ -1,0 +1,15 @@
+{
+  "player": {
+    "id": 0,
+    "name": "",
+    "maxHp": 100,
+    "hp": 100,
+    "attack": 10,
+    "armor": 50,
+    "equipped": [],
+    "isAggressive": false,
+    "items": [],
+    "bagSize": 5,
+    "interactions": []
+  }
+}

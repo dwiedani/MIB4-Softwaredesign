@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "id": 0,
+      "name": "Slingshot",
+      "type": "equippable",
+      "increaseHP": 0,
+      "bagSize": 0,
+      "hp": 50,
+      "attack": 10,
+      "armor": 50,
+      "opensStage": -1
+    },
+    {
+      "id": 1,
+      "name": "Key to Bills home",
+      "type": "consumable",
+      "increaseHP": 0,
+      "bagSize": 0,
+      "hp": 0,
+      "attack": 0,
+      "armor": 0,
+      "opensStage": 1
+    },
+    {
+      "id": 2,
+      "name": "Bills Schoolbag",
+      "type": "equippable",
+      "increaseHP": 0,
+      "bagSize": 5,
+      "hp": 0,
+      "attack": 0,
+      "armor": 0,
+      "opensStage": -1
+    }
+  ]
+}

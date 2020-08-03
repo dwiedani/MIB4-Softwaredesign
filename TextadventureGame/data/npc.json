@@ -1,0 +1,28 @@
+{
+  "npcs": [
+      {
+        "id": 0,
+        "name": "Kurt",
+        "maxHp": 100,
+        "hp": 50,
+        "attack": 10,
+        "armor": 50,
+        "equipped": [],
+        "isAggressive": false,
+        "items": [],
+        "interactions": []
+      },
+      {
+        "id": 1,
+        "name": "Billy",
+        "maxHp": 100,
+        "hp": 50,
+        "attack": 10,
+        "armor": 50,
+        "equipped": [],
+        "isAggressive": false,
+        "items": [],
+        "interactions": []
+      }
+  ]
+}

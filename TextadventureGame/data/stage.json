@@ -1,0 +1,31 @@
+{
+  "stages": [
+    {
+      "id": 0,
+      "name": "Kurts Home",
+      "information": "Kurts Home",
+      "nextStages": [1,2],
+      "items": [],
+      "locked": false,
+      "npcs": [0]
+    },
+    {
+      "id": 1,
+      "name": "Billys Home",
+      "information": "Billys Home",
+      "nextStages": [0,2],
+      "items": [0],
+      "locked": true,
+      "npcs": [1]
+    },
+    {
+      "id": 2,
+      "name": "Billys Backyard",
+      "information": "Billys Home Backyard",
+      "nextStages": [1,0],
+      "items": [1],
+      "locked": false,
+      "npcs": [1]
+    }
+  ]
+}
